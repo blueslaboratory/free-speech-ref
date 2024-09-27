@@ -1,0 +1,13 @@
+
+user: free_speech_ref
+pw: mmmmMmmmM?
+
+
+https://developer.x.com/en/portal/products
+https://developer.x.com/en/portal/products/free
+
+
+https://github.com/xdevplatform/Twitter-API-v2-sample-code
+
+
+[] Execute the bot when a certain time arrives

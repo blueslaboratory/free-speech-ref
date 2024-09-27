@@ -1,0 +1,5 @@
+Simple testing contains the free:
+
+https://developer.x.com/en/portal/products/free
+
+Usage of endpoints and they work.

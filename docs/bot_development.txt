@@ -1,0 +1,118 @@
+VSC SHORTCUT: Wrapping Text: ALT + Z
+
+################################################
+##### LET'S AUTOMATE PRE-LAW ENFORCEMENT!! #####
+################################################
+
+###############################################
+##### ChatGPT Free Speech Referee Prompts #####
+###############################################
+
+
+
+04/09/2024
+
+Hello and welcome to my life again Mister ChatGPT, today we are doing a bot in python for the pre-law enforcement of the 1st amendment on X/twitter. 
+
+The bot should be "monitoring" so that it reads the most popular and viral tweets and the tweets responding to it and the tweets responding to those and so on checking for an infringement of the 1st amendment. This reading of the popular tweets should be done until they aren't popular anymore, this could be done checking the impressions in f(t), if the rate decreases below a certain threshold on the main viral tweet, the monitoring should be stopped. 
+
+Also the bot could be called upon by a "player/fan" (twitter user) through its handlebar, @free_speech_ref, and read "all" the tweets in the conversation that are previous to the tweet it has been called upon to see if there has been an infringement of the 1st amendment.
+
+I don't want to make it excessively complicated on my 1st iteration, so some functionalities like threading to check several popular tweets at the same time could be implemented on future iterations. Let's breath in and keep it simple and fun for the the 1st run.
+
+I was thinking about 2 options to check if the 1st amendment has been infringed: 
+
+1) To API call a free LLM, but i don't know which one is free and capable of doing the required task, i can't download an LLM model since i don't have enough RAM to run it comfortably, i have 16GB of RAM and ~55 GB of free space, but i am running W10 also on this machine and it's my working machine.
+In case the project is "popular" or i decided so, it would end up in a Raspberry Pi 3 Model B+
+
+2) To check on for fighting, incitement, obscenity words, on the monitoring or when called upon on the corresponding tweet. This could be done by spliting the tweet being read into words, then checking if that word is in a tuple/list/dictionary. It would be interesting to add the infringement word to a dictionary as a key and as a value a counter that increases everytime the word is found, in an analytic sort of way, so that we know which are the most popular ones among all users.
+
+If it finds sthing going on that violates the 1st Amendment according to that LLM / hard coded rules, the bot should post a warning jpg responding to the tweet that does so and create an object of the class user saving:
+
+- the twitter's username of the perpetrator 
+- a counter with the value of number of warnings issued: 
+    0<counter<=3: f"warning_{counter}.jpg" from warning folder
+    counter==4: random yellow_card_X.jpg from yellow_card folder
+    counter==5: random red_card_X.jpg from red_card folder
+    counter==6: what_what.jpg from what folder
+    counter>=7: no jpg
+
+- the hour and date of the last infringement
+
+The program should also save the username to a dictionary with the username as the key and as a value the specific user object, which has the name username_object. 
+
+This key-value pair in the dictionary is cleared after 24 hours of the last infringement, unless the user continues to infringe the 1st amendment in the immediate 24 hours posterior to it. After 24 hours of the last infringement the "match" restarts. Until the match restarts the corresponding user's tweets that have done an infringement are monitored in case they infringe the 1st amendment again. After the match restarts the user is cleaned up from the dictionary.
+
+Infringements increasing order and corresponding images & messages to reply to the perpetrator:
+
+
+
+- Warnings: 0<counter<=3:
+
+Image: warning_1.jpg" from warning folder
+Message:
+1st warning: ⚠️
+You are not been very kind.
+
+Image: warning_2.jpg" from warning folder
+Message:
+2nd warning: ⚠️⚠️
+Watch your mouth!
+
+Image: warning_3.jpg" from warning folder
+Message:
+3rd warning: ⚠️⚠️⚠️
+Last warning!
+
+
+
+- Yellow Card: counter==4: 
+
+Image: random yellow_card_X.jpg where 0<X<=4 from yellow_card folder
+Message: 
+
+Yellow Card 🟨❕
+ 
+Please take some time to reflect on your language, you can make your point come across in a polite and respectful way.
+ 
+We are better than this, I believe in you.
+
+
+
+- Red Card: counter==5: 
+
+Image: random red_card_X.jpg where 0<X<=4 from red_card folder
+Message: 
+
+RED CARD 🟥‼️
+ 
+YOU ARE NOW EXPELLED FROM THE MATCH
+
+
+
+- WHAT: counter==6: 
+
+Image: what_what.jpg from what folder
+
+What? WHAT? WHAAAT?
+ 
+I said be kind nicely.
+ 
+You are not being kind!!
+
+Out. OUT!!
+
+
+
+- @X Police counter>=7: 
+Message:
+You want me to call the police?
+
+Is that what you want?
+Is that what YOU WANT?
+
+@X please look into it and consider suspending this entity account for 24h
+
+
+
+If you can't do this in 1 take, as it is normal, relax and let's troubleshoot it in >1 takes, i am not in a hurry, so i have time to do this well

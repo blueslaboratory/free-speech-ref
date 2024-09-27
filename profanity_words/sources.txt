@@ -1,0 +1,6 @@
+dsojevic:
+https://github.com/dsojevic/profanity-list/blob/main/en.txt
+
+
+takatama/swear-words.json:
+https://gist.github.com/takatama/b4587f6509489a529bbcd87e1a96a3f2
